@@ -66,7 +66,7 @@
  $priority = "ndnd";//BTOYOU use your sms api sender id
  $stype = "normal";//BTOYOU use your sms api sender id
 	  
-	   $sms_url = sprintf("http://192.168.200.200:8782/sms/sms/sendSms?snedTo=$dest_mobileno&message=$sms&accessKey=Xc6890edd-a333-40aa-85c8-0444c320ba1dZ");
+	   $sms_url = sprintf("http://$url/sms/sms/sendSms?snedTo=$dest_mobileno&message=$sms&accessKey=$key");
  
  $ch=curl_init();
  curl_setopt($ch,CURLOPT_URL,$sms_url);
